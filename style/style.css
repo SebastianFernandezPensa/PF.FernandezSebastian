@@ -302,7 +302,25 @@ nav ul li ul li a:hover{
     padding: 10px;
 }
 
+/* ------------------HERO RESPONSIVE------------ */
+
+@media all and (max-width: 720px){
+
+    .hero__info{
+        margin-top: 20px;
+        width: auto;
+    }
+    
+    .hero__info2{
+        width: auto;
+    }
+}
+
+
 /* -----------------MARCAS---------------------- */
+#marcas{
+    width: auto;
+}
 
 .logo__marcas {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -857,12 +875,6 @@ align-items: center;
 
 /* -------------------FOOTER---------------*/
 
-#footer{
-    background-color: rgb(109, 45, 45);
-    width: 100%;
-    height: 120px;
-}
-
 .footer{
     background-color: rgb(109, 45, 45);
     width: 100%;
@@ -873,46 +885,62 @@ align-items: center;
     justify-content: space-between;
     padding-top: 30px;
     padding-right: 30px;
+    text-align: justify;
+}
+
+.info-message{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.message span{
+    color: white;
+    font-size: 1.3em;
+    margin: 0px 10px;
+}
+
+.message span i{
+    margin: 0px 2px;
+}
+
+.conteiner__footer{
     text-align: center;
 }
 
 .conteiner__footer--p{
     color: white;
-    padding-bottom: 10px;
 }
 
 .conteiner__footer--copy{
     color: white;
 }
 
-.seguinos{
-    margin: 10px;
-}
-span{
-    cursor: pointer;
-}
+
 
 /* ------------------------------FOOTER RESPONSIVE------------------------ */
 
 @media all and (max-width: 720px){
-    #footer{
-        height: 150px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
     .footer{
         display: flex;
         justify-content: center;
-        padding: 20px;
-    }
-    .seguinos{
-        margin-right: 30px;
-    }
-    span{
-        display: flex;
         flex-direction: column;
+        align-items: center;
+        font-size: 0.6em;
+        padding-top: 0px;
+        padding-right: 0px;
     }
+
+    .info-message{
+        text-align: center;
+        margin-top:0px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    .message{
+        margin: 3px 0px;
+    }
+    
 }
 
 
