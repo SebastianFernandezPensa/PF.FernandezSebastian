@@ -207,7 +207,7 @@ nav ul li ul li a:hover{
         background-color: white;
         position: absolute;
         top: 90px;
-        left: 200px;
+        left: 35px;
         padding: 14px 0px;
         visibility: hidden;
         opacity: 0;
@@ -407,10 +407,15 @@ nav ul li ul li a:hover{
 
 .img6 { grid-area: img6; }
 
-.logo__marcas img{
+.logo__marcas {
     height: 50%;
-    width: 150px;
-    padding: 20px;
+    width: auto;
+}
+
+.imgnosotros img{
+    height: auto;
+    width: 100px;
+    
 }
 
 .text{
