@@ -482,45 +482,49 @@ nav ul li ul li a:hover{
     )
     ,url(../img/backnosotros.jpg);
     width: 100%;
-    height: 500px;
-    padding: 30px;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center ;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.hero__nosotros-titulo{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    color: white;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 }
 
-.hero__nosotros-p{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 500px;
-    height: 300px;
-    text-align: justify;
-    font-size: 1.25em;
-    padding: 5px;
+.hero__nosotros-info{
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.hero__nosotros-info p{
+    margin:10px;
 }
 
 .nosotros_img{
-    margin: 0px;
-    margin-bottom: 300px;
-
+    width: 100%;
+    height: 500px;
+    margin: 10px;
 }
-.nostros__img{
-    height: 450px;
-    width: 700px;
+
+.nosotros_img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------------responsive nosotros---------------- */
+
+
+@media screen and (max-width:768px){
+    #hero__nosotros{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros_img{
+        width: auto;
+    }
 }
 
 /* -----------------------------SERVICIOS-------------------- */
@@ -1055,7 +1059,8 @@ align-items: center;
 .footer{
     background-color: rgb(109, 45, 45);
     width: 100%;
-    height: 80px;
+    height: auto;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
