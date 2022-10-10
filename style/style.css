@@ -582,7 +582,6 @@ nav ul li ul li a:hover{
     display: flex;
     width: 100%;
     height: 200px;
-    background-color: red;
     justify-content: center;
     align-items: center;
 }
@@ -668,7 +667,7 @@ nav ul li ul li a:hover{
 
     #carteles{
         width: 100%;
-        height: 500px;
+        height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -746,13 +745,14 @@ nav ul li ul li a:hover{
 
 
     .galeria-lona {  display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
         gap: 10px 10px;
-        margin: 20px;
+        margin: 10px 0px;
         justify-items: center;
+        width: 100%;
         grid-template-areas:
           "img1 img2 img3 img4"
           "img5 img6 img7 img8"
@@ -803,15 +803,17 @@ nav ul li ul li a:hover{
       
 
       .img-lona{
-        height: 300px;
-        width: 300px;
+        height: 100%;
+        width: 100%;
       }
 
       .cont-img{
         box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        height: 300px;
         transition: all 300ms ease;
+        justify-content: center;
+        background-color: blue;
+        height: 300px;
+        width: 300px;
       }
 
     .cont-img:hover{
@@ -820,6 +822,131 @@ nav ul li ul li a:hover{
     }
 
 /* ------------RESPONSIVE CARTELES------------- */
+@media all and (max-width: 1280px){
+
+    .galeria-lona {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          "img1 img2 img3"
+          "img4 img5 img6"
+          "img7 img8 img9"
+          "img10 img11 img12"
+          "img13 img14 img15"
+          "img16 img17 img18"
+          "img19 img20 .";
+      }
+      
+      .img1 { grid-area: img1; }
+      
+      .img2 { grid-area: img2; }
+      
+      .img3 { grid-area: img3; }
+      
+      .img4 { grid-area: img4; }
+      
+      .img5 { grid-area: img5; }
+      
+      .img6 { grid-area: img6; }
+      
+      .img7 { grid-area: img7; }
+      
+      .img8 { grid-area: img8; }
+      
+      .img9 { grid-area: img9; }
+      
+      .img10 { grid-area: img10; }
+      
+      .img11 { grid-area: img11; }
+      
+      .img12 { grid-area: img12; }
+      
+      .img13 { grid-area: img13; }
+      
+      .img14 { grid-area: img14; }
+      
+      .img15 { grid-area: img15; }
+      
+      .img16 { grid-area: img16; }
+      
+      .img17 { grid-area: img17; }
+      
+      .img18 { grid-area: img18; }
+      
+      .img19 { grid-area: img19; }
+      
+      .img20 { grid-area: img20; }
+      
+}
+
+@media all and (max-width: 950px){
+
+    .info-lona  p{
+        font-size: 1em;
+    }
+    .galeria-lona {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+          "img1 img2"
+          "img3 img4"
+          "img5 img6"
+          "img7 img8"
+          "img9 img10"
+          "img11 img12"
+          "img13 img14"
+          "img15 img16"
+          "img17 img18"
+          "img19 img20";
+      }
+      
+      .img1 { grid-area: img1; }
+      
+      .img2 { grid-area: img2; }
+      
+      .img3 { grid-area: img3; }
+      
+      .img4 { grid-area: img4; }
+      
+      .img5 { grid-area: img5; }
+      
+      .img6 { grid-area: img6; }
+      
+      .img7 { grid-area: img7; }
+      
+      .img8 { grid-area: img8; }
+      
+      .img9 { grid-area: img9; }
+      
+      .img10 { grid-area: img10; }
+      
+      .img11 { grid-area: img11; }
+      
+      .img12 { grid-area: img12; }
+      
+      .img13 { grid-area: img13; }
+      
+      .img14 { grid-area: img14; }
+      
+      .img15 { grid-area: img15; }
+      
+      .img16 { grid-area: img16; }
+      
+      .img17 { grid-area: img17; }
+      
+      .img18 { grid-area: img18; }
+      
+      .img19 { grid-area: img19; }
+      
+      .img20 { grid-area: img20; }
+      
+}
 
 @media all and (max-width: 720px){
 
@@ -855,7 +982,7 @@ nav ul li ul li a:hover{
 }
 
 .info-lona p{
-    font-size: 0.8em;
+    font-size: 1em;
     color: black;
     margin: 10px 30px;
     padding: 0px;
@@ -946,9 +1073,9 @@ nav ul li ul li a:hover{
     margin-top: 50px;
 }
 
-.info1{
+.info1 p{
     text-align: justify;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 .info-marquesina{
     margin-bottom: 0px;
@@ -965,7 +1092,7 @@ nav ul li ul li a:hover{
 /* -----------------------------------GALERIA CON BOST------------------------------------- */
 
 #hero__galeria{
-    height: 70vh;
+    height: auto;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -983,7 +1110,6 @@ nav ul li ul li a:hover{
 }
 .titulo-galeria{
     margin-top: 50px;
-    text-decoration: underline;
 }
 
 .galeria-p{
@@ -1031,7 +1157,7 @@ nav ul li ul li a:hover{
     display: flex;
     width: 100%;
 }
-#contacto h2{
+#contacto h1{
     text-align: center;
     padding: 20px 0px;
     color:  rgb(233, 95, 95);
@@ -1073,17 +1199,21 @@ textarea{
     cursor: pointer;
 }
 .maps{
-justify-content: center;
-display: flex;
-margin-bottom: 10px;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
 }
 .container__contacto{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
 }
-
+/* ---------------------------responsive-contacto-------------- */
+@media all and (max-width:700px){
+    .container__contacto{
+        display: inline-table;
+    }
+}
 /* -------------------FOOTER---------------*/
 
 .footer{
