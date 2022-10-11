@@ -1,0 +1,36 @@
+#hero__nosotros{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/backnosotros.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    display: flex;
+    justify-content: center;
+        .hero__nosotros-info{
+            margin: 10px;
+            text-align: center;
+            width: 100%;
+            height: auto;
+                p{
+                    margin:10px;
+                }
+    }
+        .nosotros_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            margin: 10px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+    }
+}

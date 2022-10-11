@@ -1,0 +1,113 @@
+#hero__servicios{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/backservicios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    .hero__titulo-servicios{
+        .titulo-servicios{
+            margin-top: 50px;
+        }
+        .servicios-p{
+            color: $colorHover;
+            margin: 30px;
+            background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        );
+        }
+    }
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    @media(max-width:944px){
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    .cards1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: all 300ms ease;
+        &:hover{
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-3%);
+        }
+        a{
+            list-style: none;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: black;
+            border: 2px solid $colorHeaderfooter;
+            border-radius: 2px;
+            background: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.2),
+                rgba(0,0,0,0.2)
+            );
+            &:hover{
+                transform: scale(1.3);
+                transition: all 400ms ease;
+            }
+        }
+        .imgcard{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .infocards{
+            background-color: $colorHover;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border:3px solid $colorHeaderfooter;
+            height: 100%;
+            width: 100%;
+            h2{
+                margin-bottom: 5px;
+            }
+            p{
+                text-align: justify;
+                padding: 5px;
+                font-size: 1em;
+            }
+        }
+        @media(max-width:944px){
+            width: 75%;
+        }
+    }
+}

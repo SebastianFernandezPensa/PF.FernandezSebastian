@@ -1,0 +1,52 @@
+#hero__galeria{
+    height: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/backgaleria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    .titulo-galeria{
+        margin-top: 50px;
+    }
+    .galeria-p{
+        color: $colorHover;
+        margin: 30px;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+    }
+}
+
+#galeria{
+    .row{
+        .col-lg-4{
+            padding: 25px;
+            margin: 0px;
+            img{
+                width: 100%;
+                height: 320px;
+                &:hover{
+                    border: 5px solid $colorHover;
+                    transform: scale(1.1);
+                    transition: all 300ms ease;
+                    @media(max-width: 720px){
+                        border: 5px solid $colorHover;
+                        transform: scale(0.9);
+                        transition: all 300ms ease;
+                    }
+                }
+        }
+    }
+}
+}

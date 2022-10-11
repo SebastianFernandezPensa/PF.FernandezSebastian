@@ -1,0 +1,80 @@
+#hero{
+    
+    @media all and (max-height: 320px){
+        ustify-content: space-between;
+    }
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/fondo-banner-trazo-pincel-rojo-negro-perfecto-canva_1361-3597.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    .hero__info{
+        text-align: center;
+        width: 80%;
+        height: auto;
+        @media all and (max-height: 450px){
+            height: 40px;
+        }
+        .hero__titulo{
+            margin-bottom: 10px;
+            @media(max-width: 720px){
+                font-size: 2.0em;
+            }
+            @media all and (max-height: 450px){
+                font-size: 2.0em;
+            }
+            h1{
+                @media(max-width:686px){
+                    font-size: 0.8em;
+                }
+            }
+        }
+        .hero__p{
+            padding: 10px;
+            @media(max-width: 720px){
+                font-size: 1.0em;
+            }
+        }
+    }
+    .hero__info2{
+        border: 5px solid $colorHover;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        );
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        text-align: center;
+        padding: 10px;
+        @media(max-width: 720px){
+            font-size: 0.8em;
+            height: auto;
+        }
+        @media all and (max-height: 450px){
+            width: 90%;
+        }
+        @media all and (max-height: 320px){
+            width: 98%;
+            font-size: 0.5em;
+            margin-bottom: 50px;
+        }
+        p{
+            @media(max-width: 540px){
+                font-size: 0.8em;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+#marcas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text{
+        width: auto;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-top: 10px;
+        p{
+            margin: 0px 10px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+                color: $colorHover;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0,0,0,0.05),
+                    rgba(0,0,0,0.05)
+                );
+                @media(max-width:686px){
+                    font-size: 0.8em;
+                }
+        }
+    }
+    .imgnosotros{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        @media(max-width:686px){
+            flex-wrap: wrap;
+        }
+        img{
+            width: 160px;
+            margin: 0px 20px;
+            @media(max-width:1180px){
+                width: 120px;
+            }
+            @media(max-width:925px){
+                width: 110px;
+            }
+            @media(max-width: 860px){
+                width: 80px;
+            }
+        }
+    }
+}
