@@ -3,16 +3,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center ;
-    display: flex;
     width: 100%;
     .container__contacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        @media(max-width:700px){
-            display: inline-table;
+        display: flex;
+        padding: 20px;
+        @media(max-width:820px){
+            flex-direction: column;
         }
         form{
-            width: 90%;
+            width: auto;
             margin: auto;
             padding: 20px 20px;
             text-align: center;
@@ -44,10 +43,16 @@
             }
         }
         .maps{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-            align-items: center;
+            padding: 10px;
+            align-self: center;
+            iframe{
+                width: 400px;
+                height: 400px;
+                @media(max-width:470px){
+                    width: auto;
+                    height: auto;
+                }
+            }
         }
     }
 }

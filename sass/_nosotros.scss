@@ -1,36 +1,19 @@
-#hero__nosotros{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../img/b1\ \(2\).webp);
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center ;
-    display: flex;
-    justify-content: center;
-        .hero__nosotros-info{
-            margin: 10px;
-            text-align: center;
-            width: 100%;
-            height: auto;
-                p{
-                    margin:10px;
+.unPocomas{
+    background: $colorHeaderfooter;
+    background: linear-gradient(0deg, $colorHeaderfooter 0%, rgba(255,255,255,1) 100%);
+    .pnosotros{
+        align-self: center;
+        padding: 20px;
+        p{
+            color: black;
+            line-height: 170%;
+            font-size: 1rem;
+            box-shadow: 1px 5px 20px;
+            padding: 10px;
+            @media screen and (max-width:925px)
+            {   font-size: 0.8rem;
+                
                 }
-    }
-        .nosotros_img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 500px;
-            margin: 10px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+        }
     }
 }

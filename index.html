@@ -8,6 +8,7 @@
     <meta name="description" content="Carteleria y publicidad, empresa lider en Cordoba">
     <script src="https://kit.fontawesome.com/17a4d9633d.js" crossorigin="anonymous"></script>
     <title>CarteleriayPublicidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/estilo.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 
         <div class="parteSuperior">
             <div class="logo">
-                <img src="./img/logoposta.jpeg" alt="Logo">
+                <img src="./img/logowep.webp" alt="Logo">
             </div>
         </div>
 
@@ -29,9 +30,6 @@
                     <ul>
                         <li>
                             <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="./pages/nosotros.html">Nosotros</a>
                         </li>
                         <li>
                             <a href="./pages/servicios.html">Servicios</a>
@@ -55,16 +53,16 @@
         </div>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="container-fluid">
         <div class="hero__info">
             <h1 class="hero__titulo">
                 Carteleria y Publicidad
             </h1>
-            <p class="hero__p">
+            <h2 class="hero__p">
                 Somos una empresa familiar con más de 30 años de experiencia.
-            </p>
+            </h2>
         </div>
-        <div class="hero__info2">
+        <div class="hero__info2 container-fluid">
             <p>
                 Nos dedicamos al rubro de la cartelería y gráfica publicitaria desde el año 1996. Gracias a nuestra impecable trayectoria hemos ganado la confianza de empresas de primer nivel como el grupo Arcor, Coca-Cola, Amstel, entre otros.
                 Además del diseño, fabricación y colocación de carteles, nuestra gama de servicios también incluye cambio de lonas, reemplazo de luces y pintura de fachadas.
@@ -76,17 +74,26 @@
             <div class="text">
                 <p>Confian en Nosotros</p>
             </div>
-            <div class="imgnosotros">
-                <img src="./img/coca-cola-logo-1.png" alt="Coca-Cola">
-                <img src="./img/arcor-logo.png" alt="Arcor">
-                <img src="./img/amstel-logo-0.png" alt="Amstel">
-                <img src="./img/moura-logo-0.png" alt="Moura">
-                <img src="./img/royal-canin-logo.png" alt="RoyalCanin">
-                <img src="./img/powerade-logo-4.png" alt="Powerade">
+            <div class="imgnosotros container-fluid">
+                <img class="img-fluid" src="./img/coca-cola-logo-1.png" alt="Coca-Cola">
+                <img class="img-fluid" src="./img/arcor-logo.png" alt="Arcor">
+                <img class="img-fluid" src="./img/amstel-logo-0.png" alt="Amstel">
+                <img class="img-fluid" src="./img/moura-logo-0.png" alt="Moura">
+                <img class="img-fluid" src="./img/royal-canin-logo.png" alt="RoyalCanin">
+                <img class="img-fluid power" src="./img/powerade-logo-4.png" alt="Powerade">
             </div>
     </section>
 
-        <footer class="footer">
+    <div class="unPocomas">
+            <div class="pnosotros container-fluid">
+                <p>
+                    Nuestras relaciones comerciales se basan en la confianza mutua y la interacción continua. Nos apasiona nuestro trabajo, podemos darle vida a cualquier proyecto que pueda tener en mente, asegurarnos de que satisfaga sus necesidades y deseos... Sin embargo como puede imaginar, el éxito y la experiencia no llegaron a nosotros de la noche a la mañana. A lo largo de nuestro viaje para brindar el mejor servicio posible... cometimos errores. Hemos aprendido de todos ellos. Y utilizamos toda nuestra experiencia para afinar cada aspecto de nuestro negocio. Hicimos eso para asegurarnos de que usted reciba ¡Un servicio de letreros primera calidad! Tenemos clientes que van desde pequeñas a grandes empresas, adaptando soluciones para satisfacer cada necesidad.
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer container-fluid">
         <div class="info-message">
             <div class="message">
                     <span>Seguinos:<i class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-facebook"></i></span>
@@ -110,5 +117,6 @@
         </div>
         </footer>
         
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,51 +1,58 @@
 #marcas{
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     .text{
-        width: auto;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        margin-top: 10px;
+        align-self: center;
         p{
+            display: inline-block;
+            color: $colorHover;
             margin: 0px 10px;
-            font-size: 1.5em;
+            margin-top: 10px;
+            font-size: 1.3rem;
             text-transform: uppercase;
-                color: $colorHover;
-                background-image: linear-gradient(
-                    0deg,
-                    rgba(0,0,0,0.05),
-                    rgba(0,0,0,0.05)
-                );
-                @media(max-width:686px){
-                    font-size: 0.8em;
+            position: relative;
+            &:before,&:after{
+                content: "";
+                position: absolute;
+                width: 140px;
+                height: 3px;
+                background-color: currentColor;
+                top: 0.6em;
+                @media(max-width:520px){
+                    width: 0px;
                 }
+                @media(max-width:400px){
+                    font-size: 0.8rem;
+                }
+            }
+            &::after{
+                left: -160px;
+            }
+            &::before{
+                right: -160px;
+            }
+            @media(max-width:860px){
+                font-size: 1rem;
+            }
         }
     }
     .imgnosotros{
-        width: 100%;
-        height: auto;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0px;
-        @media(max-width:686px){
-            flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 10px;
+        .power{
+            margin-top: 20px;
         }
         img{
-            width: 160px;
-            margin: 0px 20px;
-            @media(max-width:1180px){
-                width: 120px;
+            width: 10em;
+            object-fit: contain;
+            margin: 5px;
+            @media(max-width:860px){
+                width: 8em;
             }
-            @media(max-width:925px){
-                width: 110px;
-            }
-            @media(max-width: 860px){
-                width: 80px;
+            @media(max-width:450px){
+                width: 6em;
             }
         }
     }
