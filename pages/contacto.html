@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="parteSuperior">
-            <div class="logo">
+            <div class="logo" id="logo">
                 <img src="../img/logowep.webp" alt="Logo">
             </div>
         </div>
@@ -53,11 +53,11 @@
 
     <section id="contacto">
         <div class="container__contacto">
-            <form name="contacto" method="post" action="send.php">
+            <form name="contacto" method="post" action="https://formsubmit.co/sebastianfernandez772@gmail.com">
                 <h1>Contacto</h1>
                 <input type="text" name="nombre" autocomplete="off" placeholder="Nombre">
-                <input type="email" name="correoelectronico" value="luisnastrai@gmail.com" />
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                <input type="email" name="correoelectronico" placeholder="Tu Email" />
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje, luego nos pondremos en contancto contigo!" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar" id="boton">
             </form>
             <div class="maps">
@@ -66,21 +66,28 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <div class="info-message">
             <div class="message">
-                    <span>Seguinos:<i class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-facebook"></i></span>
-            </div>
-            <div class="message">
-                    <span>
-                        <i class="fa-solid fa-message"></i>
-                        luisnastrai@gmail.com
+                    <span>Seguinos:
+                        <a href="https://www.instagram.com/cartelesnastrai/" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a> 
+                        <i class="fa-brands fa-facebook"></i>
                     </span>
             </div>
             <div class="message">
                     <span>
-                        <i class="fa-solid fa-phone"></i>
-                        351-3211139
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-message"></i>
+                            luisnastrai@gmail.com
+                        </a>
+                    </span>
+            </div>
+            <div class="message">
+                    <span>
+                        <a href="https://wa.me/543517430709?text=Hola,%20somos%20Nastrai%20Carteleria%20y%20Publicidad.%0A%C2%BFEn%20que%20te%20podemos%20ayudar?" target="_blank"> 
+                            <i class="fa-solid fa-phone"></i>
+                            351-3211139
+                        </a>
                     </span>
             </div>
         </div>
@@ -89,6 +96,11 @@
             <p class="conteiner__footer--p">&copy;LuisNastrai</p>
         </div>
         </footer>
+
+
+        <a href="#logo">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
 
 </body>
 </html>
