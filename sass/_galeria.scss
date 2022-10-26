@@ -40,6 +40,8 @@
 }
 
 #galeria{
+    background: rgb(246,246,246);
+    background: linear-gradient(180deg, rgba(246,246,246,1) 95%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
     .row{
         .col-lg-4{
             padding: 25px;
@@ -53,7 +55,7 @@
                     transition: all 300ms ease;
                     @media(max-width: 720px){
                         border: 5px solid $colorHover;
-                        transform: scale(0.9);
+                        transform: scale(1);
                         transition: all 300ms ease;
                     }
                 }

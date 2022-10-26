@@ -235,7 +235,7 @@ header .containerMenu .menu nav ul li ul:before {
 }
 
 #hero {
-  height: 70vh;
+  height: 80vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoInicio.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -316,6 +316,53 @@ header .containerMenu .menu nav ul li ul:before {
   }
 }
 
+#servicioI {
+  background: rgb(246, 246, 246);
+  background: linear-gradient(180deg, rgb(246, 246, 246) 95%, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  box-shadow: 0px 5px 15px;
+}
+@media (max-width: 457px) {
+  #servicioI {
+    flex-direction: column;
+  }
+}
+#servicioI .contenedorS {
+  text-align: center;
+  margin: 5px;
+}
+#servicioI .contenedorS img {
+  padding: 10px;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 860px) {
+  #servicioI .contenedorS img {
+    width: 5em;
+  }
+}
+#servicioI .contenedorS h2 {
+  margin-top: 5px;
+  padding: 5px;
+}
+@media (max-width: 860px) {
+  #servicioI .contenedorS h2 {
+    font-size: 1rem;
+  }
+}
+#servicioI .contenedorS p {
+  padding: 10px;
+  color: black;
+}
+@media screen and (max-width: 925px) {
+  #servicioI .contenedorS p {
+    font-size: 0.8rem;
+  }
+}
+
 #marcas {
   display: flex;
   flex-direction: column;
@@ -366,6 +413,7 @@ header .containerMenu .menu nav ul li ul:before {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 10px;
+  background-color: white;
 }
 #marcas .imgnosotros .power {
   margin-top: 20px;
@@ -394,6 +442,7 @@ header .containerMenu .menu nav ul li ul:before {
 .unPocomas .pnosotros {
   align-self: center;
   padding: 20px;
+  text-align: center;
 }
 .unPocomas .pnosotros p {
   color: black;
@@ -680,6 +729,10 @@ header .containerMenu .menu nav ul li ul:before {
   }
 }
 
+#galeria {
+  background: rgb(246, 246, 246);
+  background: linear-gradient(180deg, rgb(246, 246, 246) 95%, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+}
 #galeria .row .col-lg-4 {
   padding: 25px;
   margin: 0px;
@@ -696,7 +749,7 @@ header .containerMenu .menu nav ul li ul:before {
 @media (max-width: 720px) {
   #galeria .row .col-lg-4 img:hover {
     border: 5px solid rgb(182, 73, 54);
-    transform: scale(0.9);
+    transform: scale(1);
     transition: all 300ms ease;
   }
 }

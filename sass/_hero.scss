@@ -1,5 +1,5 @@
 #hero{
-    height: 70vh;
+    height: 80vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -75,5 +75,44 @@
     }
     @media(max-width:425px){
         font-size: 1.3em;
+    }
+}
+
+#servicioI{
+    background: rgb(246,246,246);
+    background: linear-gradient(180deg, rgba(246,246,246,1) 95%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 15px;
+    @media(max-width:457px){
+        flex-direction: column;
+    }
+    .contenedorS{
+        text-align: center;
+        margin: 5px;
+        img{
+            padding: 10px;
+            width: 100px;
+            object-fit: contain;
+            @media(max-width:860px){
+                width: 5em;
+            }
+        }
+        h2{
+            margin-top: 5px;
+            padding: 5px;
+            @media(max-width:860px){
+                font-size: 1rem;
+            }
+        }
+        p{
+            padding: 10px;
+            color: black;
+            @media screen and (max-width:925px)
+            {   font-size: 0.8rem;
+                
+                }
+        }
     }
 }
