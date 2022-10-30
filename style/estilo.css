@@ -236,7 +236,7 @@ header .containerMenu .menu nav ul li ul:before {
 
 #hero {
   height: 80vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoInicio.webp);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backwep/fondoInicio.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -460,7 +460,7 @@ header .containerMenu .menu nav ul li ul:before {
 #hero__servicios {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/b1\ \(3\).webp);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backwep/fondoServicio.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -693,7 +693,7 @@ header .containerMenu .menu nav ul li ul:before {
 
 #hero__galeria {
   height: auto;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/b1\ \(1\).webp);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backwep/fondoGaleria.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -755,7 +755,7 @@ header .containerMenu .menu nav ul li ul:before {
 }
 
 #contacto {
-  background-image: url(../img/b1\ \(4\).webp);
+  background-image: url(../img/backwep/fondoContacto.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
